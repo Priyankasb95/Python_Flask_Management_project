@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html> 
+       <head>
+	          <title>TODO|Dashboard</title>
+       </head>
+    
+       <body>
+              <form method="POST" action="/update">
+			  
+			          <table>
+					            <tr>
+								   
+									 <td><input type="hidden"name="recid"value="{{d.0}}"></td>
+								</tr>
+								
+								
+					            <tr>
+								     <td>Title:</td>
+									 <td><input type="text"name="title"value="{{d.1}}"></td>
+								</tr>
+								
+								<tr>
+								     <td>Details:</td>
+									 <td><input type="text"name="details"value="{{d.2}}"></td>
+								</tr>
+					  </table>
+					            <tr> 
+								     <td>Date:</td>
+									 <td><input type="date"name="date"value="{{d.3}}"></td>
+								</tr>
+								
+								<tr>
+								     <td><input type="submit" name="send"value="Update"></td>
+								</tr>
+					  </table>
+			  </form>
+       </body>
+    
+</html>
+
+

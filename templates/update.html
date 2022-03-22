@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+<html> 
+    <head>
+	       <title>Axisflexicap|Performance</title>
+           
+    </head>
+    
+    <body>
+             <form method="POST" action="/update">
+         			 <table>
+					        <tr>
+							      
+								  <td><input type="hidden"name="recid" value="{{d.0}}"></td>								  
+						    </tr>
+					 
+					        <tr>
+							      <td>Period:</td>
+								  <td><input type="text"name="Period" value="{{d.1}}"></td>							  
+						    </tr>
+							
+							<tr>
+							      <td>Returns_in_Percent:</td>
+								  <td><input type="text"name="Returns_in_Percent"value="{{d.2}}"></td>
+							</tr>
+							
+							<tr>   
+								  <td><input type="submit" name="send"value="Update"></td> 
+							</tr>
+							
+				    </table>
+		    </form>
+      </body>
+    
+</html>

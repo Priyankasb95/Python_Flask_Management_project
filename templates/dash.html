@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+
+<html> 
+       <head>
+	          <title>Axisflexicap|Performance</title>
+              <link rel="stylesheet" href="{{url_for('static',filename='creative.css')}}">	
+              <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}"> 			  
+       </head>
+    
+       <body>
+               <h1><u><i>Axis Flexicap Mutual Fund</i></u></h1>
+			   <p>To create New Task click on Below Link</p>
+			   <a href="/performance">Create Task</a>
+	
+	           <h2 align='center'><u>Performance</u></h2> 
+			   <table class="table table-hover"> 
+			         <tr>
+			                <th>Period</th>
+				            <th>Returns_in_Percent</th>
+				            <th>Edit</th>
+				            <th>Delete</th>
+			         </tr> 
+					 
+					 {%for x in d:%}
+					 
+					     <tr>
+					          <td>{{x.1}}</td>
+						      <td>{{x.2}}</td>
+						      <td><a href="/edit/{{x.0}}">Edit</a></td>
+						      <td><a href="/delete/{{x.0}}">Delete</a></td>
+					    </tr>
+						 
+						 
+						 
+						 
+						 
+			         {%endfor%}
+					 
+		       </table>
+			   
+			   <script src="{{url_for('static',filename='bootstrap.bundle.min.js')}}"></script> 
+		</body>
+			      
+</html>

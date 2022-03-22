@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+<html> 
+    <head>
+	       <title>Bankdata|Accounts</title>
+           
+    </head>
+    
+    <body>
+             <form method="POST" action="/update">
+         			 <table>
+					        <tr>
+							      
+								  <td><input type="hidden"name="recid" value="{{d.0}}"></td>								  
+						    </tr>
+					 
+					        <tr>
+							      <td>Account_No:</td>
+								  <td><input type="text"name="Account_No" value="{{d.1}}"></td>							  
+						    </tr>
+							
+							<tr>
+							      <td>Customer_Id:</td>
+								  <td><input type="text"name="Customer_Id"value="{{d.2}}"></td>
+							</tr>
+							
+							<tr>
+							      <td>Name_of_the_Customer:</td>
+								  <td><input type="text"name="Name_of_the_Customer"value="{{d.3}}"></td> 
+                            </tr>
+							
+							<tr>
+							      <td>Contact_No:</td>
+								  <td><input type="text"name="Contact_No"value="{{d.4}}"></td> 
+						    </tr>
+							<tr>
+							      <td>Account_Balance:</td>
+								  <td><input type="text"name="Account_Balance"value="{{d.5}}"></td> 
+						    </tr>
+							<tr>
+							      <td>Account_Type:</td>
+								  <td><input type="text"name="Account_Type"value="{{d.6}}"></td> 
+						    </tr>
+							<tr>
+							      <td>Status:</td>
+								  <td><input type="text"name="Status"value="{{d.7}}"></td> 
+						    </tr>
+							<tr>   
+								  <td><input type="submit" name="send"value="Update"></td> 
+							</tr>
+							
+				    </table>
+		    </form>
+      </body>
+    
+</html>
